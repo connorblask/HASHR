@@ -1,4 +1,4 @@
-﻿#HASHR
+#HASHR
 #Written by Connor Blaszkiewicz
 
 #Insert your own API key for VirusTotal below.
@@ -36,8 +36,9 @@ if ($virusTotalDecision -like 'y'){
     $R = Invoke-RestMethod -Method GET -Uri 'https://www.virustotal.com/vtapi/v2/file/report' -Body $B
     $R   
     echo "Thank you for using HASHR!"
+    Read-Host -Prompt "Press Enter to exit"
         
 }else{
 echo "Thank you for using HASHR!"
+Read-Host -Prompt "Press Enter to exit"
 }
-
